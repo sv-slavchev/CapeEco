@@ -1,0 +1,898 @@
+/* necessary for full page carousel */
+html,
+body,
+.view,
+.carousel-background,
+.carousel-background .carousel-item,
+.carousel-background .carousel-item.active,
+.carousel-inner {
+    height: 100%;
+}
+/* end necessary for full page carousel */
+
+main.spray-foam,
+main.batts,
+main.blown-in,
+main.gutters,
+main.susp-ceiling,
+main.gallery,
+main.about,
+main.contacts {
+    padding-top: 180px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main > h2 {
+    font-family: 'Gugi';
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.social-container i.fa-facebook-f {
+    color: #3b5998;
+}
+
+.social-container i.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* NAVBAR */
+.info-top {
+    text-transform: none;
+    padding: 10px;
+}
+
+.navbar .social-container li a {
+    font-size: 12px;
+}
+
+.info-top p i {
+    margin-right: 5px;
+}
+
+.navbar hr.d-lg-block,
+.navbar hr.d-lg-none {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.navbar hr.d-lg-block {
+    width: 40px;
+    transform: rotate(90deg);
+}
+
+.navbar hr.d-lg-none {
+    width: 60%;
+}
+
+.navbar .navbar-collapse .navbar-nav {
+    text-transform: uppercase;
+}
+
+.navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.navbar,
+.navbar .dropdown-menu a,
+footer {
+    font-size: 14px;
+    font-weight: 600;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+}
+
+/* without this, clicking will make it sticky */
+.navbar .dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+}
+/* end without this, clicking will make it sticky */
+
+.scrolling-navbar,
+.scrolling-navbar .navbar-brand svg {
+    transition: 0.5s ease-in-out;
+}
+
+/* navbar when scrolling-down */
+.top-nav-collapse {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: 0.5s ease-in-out;
+}
+/* end navbar when scrolling-down */
+
+/* resize logo when scrolling-down */
+.top-nav-collapse .navbar-brand svg {
+    width: 50px;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+}
+/* end resize logo when scrolling-down */
+
+/* hide the info-top when scrolling-down */
+.top-nav-collapse .info-top {
+    margin-top: -41px;
+    transition: 0.5s ease-in-out;
+}
+/* end hide the info-top when scrolling-down */
+/* END NAVBAR */
+
+main {
+    box-shadow: 0 10px 12px rgba(52, 58, 64, 0.8);
+    margin-bottom: 330px;
+    /*z-index: 1;*/
+}
+
+main h2 {
+    /*margin-bottom: 20px;*/
+    text-align: center;
+}
+
+main section {
+    padding: 50px 0;
+}
+
+                    /*################
+-----------------   ### INDEX PAGE ###   -----------------
+                    ################*/
+/* CAROUSEL */
+.carousel-background .carousel-item:nth-child(1) {
+    background: url("../img/WebSite/IMG_1154.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-background .carousel-item:nth-child(2) {
+    background: url("../img/WebSite/IMG_1201.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-background .carousel-item:nth-child(3) {
+    background: url("../img/WebSite/IMG_1441.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-background .carousel-item:nth-child(4) {
+    background: url("../img/WebSite/IMG_1453.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-background .carousel-item:nth-child(5) {
+    background: url("../img/WebSite/IMG_1221.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.carousel-background .carousel-item:nth-child(6) {
+    background: url("../img/WebSite/IMG_1701.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-background .carousel-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.4) 10%, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.0) 60%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0.4) 10%, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.0) 60%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to top, rgba(0,0,0,0.4) 10%, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.0) 60%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,1) 100%); */
+
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.0) 60%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,1) 100%);
+
+   /* background: linear-gradient(180deg, rgba(255,255,255,.9) 10%, rgba(255,255,255,0) 30%), linear-gradient(-20deg, rgba(0,0,0,0.6) 15%, rgba(0,0,0, 0) 40%); */
+
+   /* background: linear-gradient(to top, rgba(0,0,0,0.4) 15%, rgba(0,0,0,0) 100%); */
+}
+
+.carousel-indicators {
+    margin-bottom: 110px;
+    /* transform: rotate(90deg);
+    display: flex;
+    justify-content: flex-start;
+    top: 0;
+    background-color: red; */
+}
+/* END CAROUSEL */
+
+/* VERTICAL SCROLL DOWN BUTTON */
+.vertical-scrl-btn {
+    position: absolute;
+    right: 4rem;
+    bottom: 3rem;
+    -webkit-transform: rotate(-90deg) translate3d(100%, 50%, 0);
+    -ms-transform: rotate(-90deg) translate3d(100%, 50%, 0);
+    transform: rotate(-90deg) translate3d(100%, 50%, 0);
+    -webkit-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
+    z-index: 2;
+}
+
+.vertical-scrl-btn .scroll-link {
+    font-weight: 600;
+    /*font-size: 1.2rem;*/
+    text-transform: uppercase;
+    letter-spacing: 0.35rem;
+    text-align: left;
+    color: white;
+    position: relative;
+    padding-right: 200px;
+}
+
+.vertical-scrl-btn::after {
+    content: "";
+    display: block;
+    background-color: white;
+    width: 150px;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+/* END VERTICAL SCROLL DOWN BUTTON */
+
+/* SIDE BUTTONS */
+.side-buttons a .fixed-action-fb-btn,
+.side-buttons a .fixed-action-ins-btn,
+.side-buttons a .fixed-action-map-btn {
+    position: fixed;
+    right: -100px;
+    width: 150px;
+    padding: 18px;
+    padding-left: 20px;
+    color: white;
+    font-weight: 700;
+    transition: .4s all ease-in-out;
+    z-index: 100;
+}
+
+.side-buttons a .fixed-action-fb-btn {
+    top: 200px;
+    /* background: linear-gradient(120deg, #3b5998, #FFFFFF); */
+    background-color: #4267B2;
+}
+
+.side-buttons a .fixed-action-ins-btn {
+    top: 253px;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.side-buttons a .fixed-action-map-btn {
+    top: 308px;
+    background-color: lightgreen;
+}
+
+.side-buttons a .fixed-action-fb-btn i,
+.side-buttons a .fixed-action-ins-btn i,
+.side-buttons a .fixed-action-map-btn i {
+    width: 25px;
+}
+
+.side-buttons a .fixed-action-fb-btn:hover,
+.side-buttons a .fixed-action-ins-btn:hover,
+.side-buttons a .fixed-action-map-btn:hover {
+    width: 160px;
+    margin-right: 80px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: .4s all ease-in-out;
+}
+/* END SIDE BUTTONS */
+
+/* CONTACTS CONTAINER */
+.contacts-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    color: white;
+    z-index: 2;
+}
+
+.contacts-container a {
+    color: white;
+}
+/* END CONTACTS CONTAINER */
+
+/* OUR PRODUCTS (MULTI-BOX SLIDER) */
+.multi-box-slide {
+    padding-top: 100px;
+}
+
+.multi-box-slide .slide {
+    width: 150px;
+    height: 150px;
+}
+
+.multi-box-slide div div {
+    margin-bottom: 20px;
+}
+
+.multi-box-slide div div p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.slick-slide {
+    margin: 0 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list .dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+/*
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+*/
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+/*
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide .slick-loading img {
+    display: none;
+}
+
+.slick-slide .dragging img {
+    pointer-events: none;
+}
+*/
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow .slick-hidden {
+    display: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: 0.2;
+}
+
+.slick-active {
+    opacity: 0.6;
+}
+
+.slick-current {
+    opacity: 1;
+}
+/* END OUR PRODUCTS (MULTI-BOX SLIDER) */
+
+/* MASONRY GALLERY */
+
+
+.masonry-gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    column-count: 3;
+    margin-top: 20px;
+}
+
+.masonry-gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.masonry-gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+/* END MASONRY GALLERY */
+
+/* FOOTER */
+footer {
+    position: fixed;
+    /*background-color: #667490;*/
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+footer h6,
+footer p {
+    color: black;
+}
+
+footer hr {
+    width: 60px;
+    background-color: orange;
+}
+
+footer h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+footer div a p {
+    margin-bottom: 10px;
+}
+
+footer .about-container {
+    font-weight: 500;
+}
+
+footer .social-container {
+    margin-top: -10px;
+}
+
+footer .social-container a {
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    overflow: hidden;
+    -webkit-transition: -webkit-all .2s ease-in-out;
+    -moz-transition: -moz-all .2s ease-in-out;
+    -o-transition: -o-all .2s ease-in-out;
+    -ms-transition: -ms-all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.footer-copyright p {
+    text-align: center;
+    padding: 15px 0;
+}
+/* END FOOTER */
+                    /*####################
+-----------------   ### END INDEX PAGE ###   -----------------
+                    ####################*/
+
+                    /*#####################
+-----------------   ### SPRAY FOAM PAGE ###   -----------------
+                    ### BATTS PAGE      ###
+                    #####################*/
+main.spray-foam section,
+main.batts section {
+    position: relative;
+}
+
+main.spray-foam .spray-foam-content-text p,
+main.batts .batts-content-text p {
+    margin: 0;
+    padding: 0;
+}
+
+main.spray-foam .spray-foam-content-text,
+main.batts .batts-content-text {
+    background: rgba(255, 255, 255, 0.9);
+    /*border: 10px solid #E0E0E0;*/
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+                    /*#########################
+-----------------   ### END SPRAY FOAM PAGE ###   -----------------
+                    ### END BATTS PAGE      ###
+                    #########################*/
+
+                    /*#####################
+-----------------   ### SPRAY FOAM PAGE ###   -----------------
+                    #####################*/
+/* SHUFFLE PHOTOS */
+.main-about {
+    position: relative;
+}
+
+.main-about .img-left-01 {
+    display: inline-block;
+    margin-top: -50px;
+}
+
+.main-about .img-left-02 {
+    display: inline-block;
+    border: 10px solid #E0E0E0;
+    margin-top: -180px;
+    margin-right: -100px;
+    margin-left: 100px;
+}
+
+.post-about {
+    background: rgba(255, 255, 255, 0.95);
+    /*padding: 80px 50px;*/
+    padding: 20px;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.post-about.negative-margin {
+    margin: 0 -200px 0 -50px;
+}
+
+.main-about .img-rightt-01 {
+    margin-top: -20px;
+    margin-left: -200px;
+}
+
+.main-about .img-rightt-02 {
+    margin-top: -100px;
+    margin-left: -100px;
+}
+/* END SHUFFLE PHOTOS */
+                    /*#########################
+-----------------   ### END SPRAY FOAM PAGE ###   -----------------
+                    #########################*/
+
+                    /*##################
+-----------------   ### GUTTERS PAGE ###   -----------------
+                    ##################*/
+main.gutters section ul {
+    font-size: 18px;
+}
+
+/* CAROUSEL */
+main.gutters .carousel-inner img {
+    width: 80%;
+}
+
+main.gutters #custCarousel a.carousel-control-prev i,
+main.gutters #custCarousel a.carousel-control-next i {
+    font-size: 30px;
+    color: black;
+}
+
+main.gutters #custCarousel .carousel-indicators {
+    position: static;
+    margin-top: 20px;
+}
+
+main.gutters #custCarousel .carousel-indicators>li {
+    width: 100px;
+    height: 0;
+}
+
+main.gutters #custCarousel .carousel-indicators li img {
+    display: flex;
+    opacity: 0.5;
+
+}
+
+main.gutters #custCarousel .carousel-indicators li:hover img {
+    opacity: 0.8;
+}
+
+main.gutters #custCarousel .carousel-indicators li.active img {
+    opacity: 1;
+
+}
+/* END CAROUSEL */
+                    /*######################
+-----------------   ### END GUTTERS PAGE ###   -----------------
+                    ######################*/
+
+                    /*##################
+-----------------   ### GALLERY PAGE ###   -----------------
+                    ##################*/
+/*
+.gallery section .img-fixed-box {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.gallery section .img-fixed-box a img {
+    width: 100%;
+}
+
+.gallery section .img-fixed-box a:hover img {
+    width: 105%;
+    transition: all 0.3s ease-in-out;
+}
+*/
+                    /*######################
+-----------------   ### END GALLERY PAGE ###   -----------------
+                    ######################*/
+
+                    /*###################
+-----------------   ### ABOUT US PAGE ###   -----------------
+                    ###################*/
+main.about .map-container {
+  overflow: hidden;
+  position: relative;
+  height: 750px;
+}
+
+main.about .map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+                    /*#######################
+-----------------   ### END ABOUT US PAGE ###   -----------------
+                    #######################*/
+
+                    /*###################
+-----------------   ### CONTACTS PAGE ###   -----------------
+                    ###################*/
+main.contacts {
+    min-height: 100%;
+}
+                    /*#######################
+-----------------   ### END CONTACTS PAGE ###   -----------------
+                    #######################*/
+
+                    /*#######################
+-----------------   ### @MEDIA RESPONSIVE ###   -----------------
+                    #######################*/
+
+@media only screen and (max-width: 576px) {
+    header .navbar .navbar-brand.d-lg-none {
+        margin-top: 30px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        margin-top: -30px;
+        transition: 0.5s ease-in-out;
+    }
+
+    button.navbar-toggler {
+        margin-top: 30px;
+    }
+
+    footer {
+        position: static;
+        margin-top: -520px;
+        margin-bottom: 0;
+    }
+}
+
+
+/* NAVBAR RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    header .navbar .navbar-brand.d-lg-none {
+        margin-top: 30px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        margin-top: -30px;
+        transition: 0.5s ease-in-out;
+    }
+
+    button.navbar-toggler {
+        margin-top: 30px;
+    }
+
+    .navbar {
+        /*background-color: #667490;*/
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* CONTACTS CONTAINER */
+    .contacts-container {
+        position: relative;
+        background-color: rgba(255, 255, 255, 1);
+        color: black;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        margin-bottom: -70px;
+        width: 100%;
+    }
+
+    .contacts-container a {
+        color: black;
+    }
+    /* END CONTACTS CONTAINER */
+
+    main {
+        margin-bottom: 550px;
+    }
+
+    footer {
+        position: static;
+        margin-top: -520px;
+        margin-bottom: 0;
+    }
+}
+/* END NAVBAR RESPONSIVE */
+
+/* MASONRY GALLERY RESPONSIVE */
+@media only screen and (max-width: 450px) {
+    .masonry-gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}
+/* END MASONRY GALLERY RESPONSIVE */
+
+/* SPRAY FOAM/BATTS PAGE RESPONSIVE */
+@media only screen and (min-width: 992px) {
+    /*main.spray-foam .spray-foam-content-text,
+    main.batts .batts-content-text {
+        margin-top: 10%;
+    }*/
+
+    main.spray-foam .spray-foam-content-text,
+    main.batts .batts-content-text {
+        border: 10px solid #E0E0E0;
+    }
+
+    main.spray-foam section .img-left,
+    main.batts section .img-left {
+        margin-right: -300px;
+    }
+
+    main.spray-foam section .img-right,
+    main.batts section .img-right {
+        margin-left: -300px;
+    }
+}
+/* END SPRAY FOAM/BATTS PAGE RESPONSIVE */
+
+/* BLOWN-IN PAGE */
+@media only screen and (min-width: 992px) {
+    main.blown-in section .img-box {
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
+        background: -o-linear-gradient(left, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
+        transform: skew(-21deg);
+        padding-left: 50px;
+    }
+
+    main.blown-in section:nth-child(3) .img-box {
+        background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
+        background: -o-linear-gradient(right, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
+        background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
+        transform: skew(21deg);
+        padding-left: 70px;
+    }
+
+    main.blown-in section .img-box > div {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        width: 450px;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    main.blown-in section .img-box > div > img {
+        width: 140%;
+        margin-left: -110px;
+        margin-top: -350px;
+        transform: skew(21deg);
+        margin-bottom: 50px;
+    }
+
+    main.blown-in section:nth-child(3) .img-box > div > img {
+        width: 135%;
+        margin-left: -30px;
+        margin-top: -380px;
+        transform: skew(-21deg);
+        margin-bottom: 50px;
+    }
+
+    main.blown-in section:nth-child(5) .img-box > div > img {
+        width: 130%;
+        margin-left: -30px;
+        margin-top: -120px;
+    }
+
+    main.blown-in section .text-box {
+        padding-right: 100px;
+    }
+
+    main.blown-in section:nth-child(3) .text-box {
+        padding-left: 100px;
+    }
+}
+/* END BLOWN-IN PAGE */
