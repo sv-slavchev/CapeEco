@@ -25,8 +25,8 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top d-block">
             <div class="container-fluid fixed-top info-top">
-                <a href="tel:7745033775"><p><i class="fas fa-phone-alt"></i> 774-503-3775</p></a>     <!--id="header-phone"-->
-                <p class="d-none d-md-block"><i class="fas fa-map-marker-alt"></i> 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</p>
+                <a href="tel:7745033775"><p><i class="fas fa-phone-alt"></i> 774-503-3775</p></a>
+                <a href="#" data-toggle="modal" data-target="#addressModal"><p class="d-none d-md-block"><i class="fas fa-map-marker-alt"></i> 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</p></a>
                 <a href="mailto:christian@capeeco.com?subject=Mail_from_our_Website"><p><i class="fas fa-envelope"></i> christian@capeeco.com</p></a>
             </div>
 
@@ -245,7 +245,6 @@
                                 <a class="dropdown-item" href="blown-in-insulation.html">Blown-in</a>
                             </div>
                         </li>
-
                         <li class="nav-item"><a class="nav-link waves-effect" href="gutters.html">Gutters</a></li>
                         <li class="nav-item"><a class="nav-link waves-effect" href="suspended-ceiling.html">Suspended ceiling</a></li>
                         <li class="nav-item"><a class="nav-link waves-effect" href="gallery.html">Gallery</a></li>
@@ -275,10 +274,31 @@
         <!-- END Navbar -->
     </header>
 
-    <main class="bg-light pb-5 gutters">
+    <div class="side-buttons">
+        <a href="#">
+            <div class="fixed-action-fb-btn">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="fixed-action-ins-btn">
+                <!-- <i class="fab fa-instagram"></i> Instagram -->
+                <i class="fab fa-instagram"></i> Instagram
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="fixed-action-map-btn" data-toggle="modal" data-target="#addressModal">
+                <i class="fas fa-map-marker-alt"></i> Location
+            </div>
+        </a>
+    </div>
+
+    <main class="bg-light gutters">
         <h2 class="text-center">Gutters</h2>
 
-        <section class="container d-md-flex py-5">
+        <section class="container d-md-flex">
             <div class="col-md-6 col-12 my-auto">
                 <h5><strong>Did you check our gutters options for your home?</strong></h5>
 
@@ -298,17 +318,19 @@
             </div>
         </section>
 
-        <section class="container d-md-flex py-5">
-            <div class="col-md-6 col-12 hoverable px-0">
-                <img src="./img/WebSite/Gutters/IMG_1507.jpg" width="100%" class="" alt="zoom">
-            </div>
+        <section class="container-fluid bg-white">
+            <div class="container d-md-flex">
+                <div class="col-md-6 col-12 hoverable px-0">
+                    <img src="./img/WebSite/Gutters/IMG_1507.jpg" width="100%" class="" alt="zoom">
+                </div>
 
-            <div class="col-md-6 col-12 my-auto">
-                <p>A rain gutter  is a component of a water discharge system for a building.[1] It is necessary to prevent water dripping or flowing off roofs in an uncontrolled manner for several reasons: to prevent it damaging the walls, drenching persons standing below or entering the building, and to direct the water to a suitable disposal site where it will not damage the foundations of the building. In the case of a flat roof, removal of water is essential to prevent water ingress and to prevent a build-up of excessive weight.</p>
+                <div class="col-md-6 col-12 my-auto">
+                    <p>A rain gutter  is a component of a water discharge system for a building.[1] It is necessary to prevent water dripping or flowing off roofs in an uncontrolled manner for several reasons: to prevent it damaging the walls, drenching persons standing below or entering the building, and to direct the water to a suitable disposal site where it will not damage the foundations of the building. In the case of a flat roof, removal of water is essential to prevent water ingress and to prevent a build-up of excessive weight.</p>
+                </div>
             </div>
         </section>
 
-        <section class="container d-md-flex py-5">
+        <section class="container d-md-flex">
             <div class="col-md-6 col-12 my-auto">
                 <p>Gutters prevent water ingress into the fabric of the building by channelling the rainwater away from the exterior of the walls and their foundations. [5] Water running down the walls causes dampness in the affected rooms and provides a favourable environment for growth of mould, and wet rot in timber.</p>
             </div>
@@ -318,9 +340,10 @@
             </div>
         </section>
 
-        <section class="container py-5">
-            <h4 class="text-center pb-3">Photos from our completed projects</h4>
-            <div class="row">
+        <section class="container-fluid bg-white">
+            <div class="container">
+                <h4 class="text-center pb-3">Photos from our completed projects</h4>
+                <div class="row">
                 <div class="col-12">
                     <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
                         <!-- slides -->
@@ -343,6 +366,7 @@
                         </ol>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
@@ -514,6 +538,21 @@
     </div>
     <!--/.Copyright-->
     <!--/.Footer-->
+
+    <!-- addressModal -->
+    <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModal"
+    aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Address: 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <iframe width="100%" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=16%20Giddiah%20Hill%20Rd%20Unit%207%20Orleans%2C%20MA%2002653&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>

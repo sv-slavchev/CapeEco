@@ -25,8 +25,8 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top d-block">
             <div class="container-fluid fixed-top info-top">
-                <a href="tel:7745033775"><p><i class="fas fa-phone-alt"></i> 774-503-3775</p></a>     <!--id="header-phone"-->
-                <p class="d-none d-md-block"><i class="fas fa-map-marker-alt"></i> 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</p>
+                <a href="tel:7745033775"><p><i class="fas fa-phone-alt"></i> 774-503-3775</p></a>
+                <a href="#" data-toggle="modal" data-target="#addressModal"><p class="d-none d-md-block"><i class="fas fa-map-marker-alt"></i> 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</p></a>
                 <a href="mailto:christian@capeeco.com?subject=Mail_from_our_Website"><p><i class="fas fa-envelope"></i> christian@capeeco.com</p></a>
             </div>
 
@@ -245,7 +245,6 @@
                                 <a class="dropdown-item" href="blown-in-insulation.html">Blown-in</a>
                             </div>
                         </li>
-
                         <li class="nav-item"><a class="nav-link waves-effect" href="gutters.html">Gutters</a></li>
                         <li class="nav-item"><a class="nav-link waves-effect" href="suspended-ceiling.html">Suspended ceiling</a></li>
                         <li class="nav-item"><a class="nav-link waves-effect" href="gallery.html">Gallery</a></li>
@@ -275,10 +274,31 @@
         <!-- END Navbar -->
     </header>
 
-    <main class="bg-light pb-5 blown-in">
+    <div class="side-buttons">
+        <a href="#">
+            <div class="fixed-action-fb-btn">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="fixed-action-ins-btn">
+                <!-- <i class="fab fa-instagram"></i> Instagram -->
+                <i class="fab fa-instagram"></i> Instagram
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="fixed-action-map-btn" data-toggle="modal" data-target="#addressModal">
+                <i class="fas fa-map-marker-alt"></i> Location
+            </div>
+        </a>
+    </div>
+
+    <main class="bg-light blown-in">
         <h2 class="text-center">Blown-in Insulation</h2>
 
-        <section class="container d-md-flex my-5 px-0">
+        <section class="container d-md-flex px-0">
             <div class="col-md-6 col-12 my-auto text-box">
                 <p>The term blown-in insulation (or loose-fill insulation) refers to the process of filling stud or joist cavities or covering attic floors, with any loose material that has a good insulating R-value. While there are a variety of materials that can be used, including styrofoam pellets or loose fiberglass fibers, the most common material used for blown-in applications is cellulose material.</p>
             </div>
@@ -290,23 +310,26 @@
             </div>
         </section>
 
-        <section class="container d-md-flex my-5 px-0">
-            <div class="col-md-6 col-12 py-5 img-box">
-                <div>
-                    <img src="./img/WebSite/Insulation/Blown-in/IMG_1685.JPG" width="100%" alt="">
+        <section class="container-fluid bg-white">
+            <div class="container d-md-flex px-0">
+                <div class="col-md-6 col-12 py-5 img-box">
+                    <div>
+                        <img src="./img/WebSite/Insulation/Blown-in/IMG_1685.JPG" width="100%" alt="">
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-6 col-12 my-auto text-box">
+                <div class="col-md-6 col-12 my-auto text-box">
                     <p>Made from recycled newspaper, cardboard, and other wood-based materials, blown-in cellulose is treated with boric acid and other substances that make it flame resistant and mold-resistant. It is then packaged in tightly packed bales or bags. Installation involves the use of a mechanical blower/hopper that churns up the cellulose material with paddles to loosen it and mix it with air, then blowns the fluffy insulation through hoses to wherever it is required. These are very expensive machines but they are available for rent, and some home improvement centers will loan out the machines for free to homeowners buying large quantities of insulation. More often, though, this installation is performed by a contractor specializing in the process.</p>
 
                     <p>Blown-in insulation is widely considered the best means of adding insulation in existing construction, both for attic spaces and in wall cavities.</p>
                 </div>
+            </div>
         </section>
 
-        <h4 class="text-center"><strong>Advantages:</strong></h4>
+        <section class="container px-0">
+            <h4 class="text-center pb-3"><strong>Advantages:</strong></h4>
 
-        <section class="container d-md-flex my-5 px-0">
+            <div class="d-md-flex">
             <div class="col-md-6 col-12 my-auto text-box">
                 <p>A few reasons to consider blown-in Insulation for your project:</p>
 
@@ -330,6 +353,7 @@
                 <div class="mt-md-4">
                     <img src="./img/WebSite/Insulation/Blown-in/IMG_2102.jpg" width="100%" alt="">
                 </div>
+            </div>
             </div>
         </section>
     </main>
@@ -501,6 +525,21 @@
     </div>
     <!--/.Copyright-->
     <!--/.Footer-->
+
+    <!-- addressModal -->
+    <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModal"
+    aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Address: 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <iframe width="100%" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=16%20Giddiah%20Hill%20Rd%20Unit%207%20Orleans%2C%20MA%2002653&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>

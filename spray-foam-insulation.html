@@ -25,8 +25,8 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top d-block">
             <div class="container-fluid fixed-top info-top">
-                <a href="tel:7745033775"><p><i class="fas fa-phone-alt"></i> 774-503-3775</p></a>     <!--id="header-phone"-->
-                <p class="d-none d-md-block"><i class="fas fa-map-marker-alt"></i> 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</p>
+                <a href="tel:7745033775"><p><i class="fas fa-phone-alt"></i> 774-503-3775</p></a>
+                <a href="#" data-toggle="modal" data-target="#addressModal"><p class="d-none d-md-block"><i class="fas fa-map-marker-alt"></i> 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</p></a>
                 <a href="mailto:christian@capeeco.com?subject=Mail_from_our_Website"><p><i class="fas fa-envelope"></i> christian@capeeco.com</p></a>
             </div>
 
@@ -245,7 +245,6 @@
                                 <a class="dropdown-item" href="blown-in-insulation.html">Blown-in</a>
                             </div>
                         </li>
-
                         <li class="nav-item"><a class="nav-link waves-effect" href="gutters.html">Gutters</a></li>
                         <li class="nav-item"><a class="nav-link waves-effect" href="suspended-ceiling.html">Suspended ceiling</a></li>
                         <li class="nav-item"><a class="nav-link waves-effect" href="gallery.html">Gallery</a></li>
@@ -275,6 +274,27 @@
         <!-- END Navbar -->
     </header>
 
+    <div class="side-buttons">
+        <a href="#">
+            <div class="fixed-action-fb-btn">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="fixed-action-ins-btn">
+                <!-- <i class="fab fa-instagram"></i> Instagram -->
+                <i class="fab fa-instagram"></i> Instagram
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="fixed-action-map-btn" data-toggle="modal" data-target="#addressModal">
+                <i class="fas fa-map-marker-alt"></i> Location
+            </div>
+        </a>
+    </div>
+
     <main class="bg-light spray-foam">
         <h2 class="text-center">Spray Foam Insulation</h2>
 
@@ -284,32 +304,34 @@
             <p class="lead">We offer both open cell and closed cell spray foam products. Closed cell provides a superior air and moisture barrier, making it the most effective insulation available for energy performance. Open cell spray foam is a more affordable option that still provides an air sealing capacity and an R-value that supersede nearly every other insulation product on the market.</p>
         </div>
 
-        <section class="container py-5">
-            <h5 class="text-center pb-3">Closed Cell Foam</h5>
-            <div class="row">
-                <div class="col-md-4 col-12">
-                    <div class="img-left os-animation animated fadeIn" data-os-animation="fadeIn" data-os-animation-delay="0.2s" style="animation-delay: 0.2s;">
-                        <img src="./img/WebSite/Insulation/Spray-foam/spray-foam-pic4.jpg" width="100%" alt="">
+        <section class="container-fluid bg-white mb-5">
+            <div class="container">
+                <h5 class="text-center pb-3">Closed Cell Foam</h5>
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div class="img-left os-animation animated fadeIn" data-os-animation="fadeIn" data-os-animation-delay="0.2s" style="animation-delay: 0.2s;">
+                            <img src="./img/WebSite/Insulation/Spray-foam/spray-foam-pic4.jpg" width="100%" alt="">
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-md-8 col-12 my-auto">
-                    <div class="spray-foam-content-text" style="border 10px solid #e0e0e0;">
-                        <h6 class="text-center">GacoOnePass</h6>
+                    <div class="col-md-8 col-12 my-auto">
+                        <div class="spray-foam-content-text" style="border 10px solid #e0e0e0;">
+                            <h6 class="text-center">GacoOnePass</h6>
 
-                        <p>GacoOnePass 2 lb. Closed Cell Foam installs quickly in up to 4+" passes which reduces labor costs by 50% or more and offers 20-30% higher yields than standard 2 lb. foams when sprayed in one pass at 3 to 4" thickness.</p>
+                            <p>GacoOnePass 2 lb. Closed Cell Foam installs quickly in up to 4+" passes which reduces labor costs by 50% or more and offers 20-30% higher yields than standard 2 lb. foams when sprayed in one pass at 3 to 4" thickness.</p>
 
-                        <p class="py-1">As an ABAA Evaluated Material as part of an ABAA Evaluated Assembly, GacoOnePass is approved for use in air barrier systems. It is Appendix X approved for use without an additional ignition barrier and meets the requirement for a Class II vapor retarder at just 0.44".</p>
+                            <p class="py-1">As an ABAA Evaluated Material as part of an ABAA Evaluated Assembly, GacoOnePass is approved for use in air barrier systems. It is Appendix X approved for use without an additional ignition barrier and meets the requirement for a Class II vapor retarder at just 0.44".</p>
 
-                        <p class="pb-1">GacoOnePass is ideal for use in a variety of residential and commercial applications and it can be used in deep fill applications with up to 18” in depth per pass for applications like trench fill, pipe erosion control, container filling, etc.</p>
+                            <p class="pb-1">GacoOnePass is ideal for use in a variety of residential and commercial applications and it can be used in deep fill applications with up to 18” in depth per pass for applications like trench fill, pipe erosion control, container filling, etc.</p>
 
-                        <p>GacoOnePass is UL GREENGUARD and GREENGUARD Gold certified.</p>
+                            <p>GacoOnePass is UL GREENGUARD and GREENGUARD Gold certified.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="d-none d-md-block white-bg py-5 mt-5">
+        <section id="about" class="d-none d-md-block white-bg">
             <div class="container">
                 <div class="row">
                     <div class="main-about d-flex">
@@ -344,7 +366,7 @@
                         <!-- /.col -->
 
                         <!-- /.col -->
-                        <div class="col-md-2 col-sm-3 col-xs-12 np">
+                        <div class="col-md-2 col-sm-3 col-xs-12 np pt-4">
                             <div class="img-rightt-02 os-animation animated fadeIn" data-os-animation="fadeIn" data-os-animation-delay="0.6s" style="animation-delay: 0.6s;">
                                 <img src="./img/WebSite/Insulation/Spray-foam/spray-foam-pic5.jpg" width="100%" alt="about">
                             </div>
@@ -358,7 +380,7 @@
             <!-- /.container -->
         </section>
 
-        <section class="container d-block d-md-none py-5">
+        <section class="container d-block d-md-none pt-5">
             <h5 class="text-center pb-3">Open Cell Foam</h5>
             <div class="row">
                 <div class="col-md-8 col-12 my-auto">
@@ -377,33 +399,34 @@
             </div>
         </section>
 
-        <section class="container my-5">
-            <h4 class="text-center pb-3">Benefits:</h4>
+        <section class="container-fluid bg-white">
+            <div class="container">
+                <h4 class="text-center pb-3">Benefits:</h4>
 
-            <ul class="nav nav-tabs nav-justified bg-warning" id="tabBenefits" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                aria-selected="true">Closed Cell Foam</a>
-                </li>
+                <ul class="nav nav-tabs justify-content-center" id="tabBenefits" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                    aria-selected="true">Closed Cell Foam</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                aria-selected="false">Open Cell Foam</a>
-                </li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                    aria-selected="false">Open Cell Foam</a>
+                    </li>
+                </ul>
 
-            <div class="tab-content" id="tabBenefitsContent">
+                <div class="tab-content" id="tabBenefitsContent">
                 <div class="tab-pane fade show active justify-content-center" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <ul class="list-unstyled p-5 animated fadeInLeft">
-                        <li><i class="fas fa-angle-double-right mr-2"></i> <strong>1 hour reentry</strong> - With only 10 ACH</li>
-                        <li><i class="fas fa-angle-double-right mr-2"></i> <strong>4+" passes</strong> - Installs quickly, saves time and reduces labor costs</li>
-                        <li><i class="fas fa-angle-double-right mr-2"></i> <strong>Exceptional sprayability</strong> - Superior formulation provides consistent, forgiving, user friendly foam with predictable yields and less gun clogging</li>
-                        <li><i class="fas fa-angle-double-right mr-2"></i> <strong>Less viscous</strong> - Reduces wear and tear on equipment</li>
-                        <li><i class="fas fa-angle-double-right mr-2"></i> <strong>Low odor</strong> - Improves work environment</li>
-                        <li><i class="fas fa-angle-double-right mr-2"></i> <strong>Lower energy costs</strong> - Higher R-values than conventional insulation and a seamless air barrier reduce uncontrolled air leakage, resulting in lower energy costs</li>
-                        <li><i class="fas fa-angle-double-right mr-2"></i> <strong>Design flexibility</strong> - Adheres to the substrate, allowing for easy monolithic installation for greater structural strength and stability, and enhances resistance to water damage; expands to fill even irregularly shaped and hard to reach areas</li>
-                        <li><i class="fas fa-angle-double-right mr-2"></i> <strong>Lower construction cost / Value engineering</strong> - Achieve insulation, air barrier, vapor retarder and thermal break all in one for reduced material costs; energy efficiency results in smaller HVAC system requirements</li>
-                        <li><i class="fas fa-angle-double-right mr-2"></i> <strong>Long term value</strong> - Customers today are concerned about their building’s integrity; spray foam helps a building withstand the tests of the elements and time</li>
+                        <li><i class="fas fa-angle-double-right"></i> <strong>1 hour reentry</strong> - With only 10 ACH</li>
+                        <li><i class="fas fa-angle-double-right"></i> <strong>4+" passes</strong> - Installs quickly, saves time and reduces labor costs</li>
+                        <li><i class="fas fa-angle-double-right"></i> <strong>Exceptional sprayability</strong> - Superior formulation provides consistent, forgiving, user friendly foam with predictable yields and less gun clogging</li>
+                        <li><i class="fas fa-angle-double-right"></i> <strong>Less viscous</strong> - Reduces wear and tear on equipment</li>
+                        <li><i class="fas fa-angle-double-right"></i> <strong>Low odor</strong> - Improves work environment</li>
+                        <li><i class="fas fa-angle-double-right"></i> <strong>Lower energy costs</strong> - Higher R-values than conventional insulation and a seamless air barrier reduce uncontrolled air leakage, resulting in lower energy costs</li>
+                        <li><i class="fas fa-angle-double-right"></i> <strong>Design flexibility</strong> - Adheres to the substrate, allowing for easy monolithic installation for greater structural strength and stability, and enhances resistance to water damage; expands to fill even irregularly shaped and hard to reach areas</li>
+                        <li><i class="fas fa-angle-double-right"></i> <strong>Lower construction cost / Value engineering</strong> - Achieve insulation, air barrier, vapor retarder and thermal break all in one for reduced material costs; energy efficiency results in smaller HVAC system requirements</li>
+                        <li><i class="fas fa-angle-double-right"></i> <strong>Long term value</strong> - Customers today are concerned about their building’s integrity; spray foam helps a building withstand the tests of the elements and time</li>
                     </ul>
                 </div>
 
@@ -417,6 +440,7 @@
                         <li><i class="fas fa-angle-double-right mr-2"></i> Reduced installation and construction waste</li>
                     </ul>
                 </div>
+            </div>
             </div>
         </section>
     </main>
@@ -588,6 +612,21 @@
     </div>
     <!--/.Copyright-->
     <!--/.Footer-->
+
+    <!-- addressModal -->
+    <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModal"
+    aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Address: 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <iframe width="100%" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=16%20Giddiah%20Hill%20Rd%20Unit%207%20Orleans%2C%20MA%2002653&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
