@@ -150,38 +150,38 @@ main section {
                     ################*/
 /* CAROUSEL */
 .carousel-background .carousel-item:nth-child(1) {
+    background: url("../img/WebSite/IMG_1221.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.carousel-background .carousel-item:nth-child(2) {
     background: url("../img/WebSite/IMG_1154.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.carousel-background .carousel-item:nth-child(2) {
+.carousel-background .carousel-item:nth-child(3) {
     background: url("../img/WebSite/IMG_1201.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.carousel-background .carousel-item:nth-child(3) {
+.carousel-background .carousel-item:nth-child(4) {
     background: url("../img/WebSite/IMG_1441.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.carousel-background .carousel-item:nth-child(4) {
+.carousel-background .carousel-item:nth-child(5) {
     background: url("../img/WebSite/IMG_1453.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
-
-.carousel-background .carousel-item:nth-child(5) {
-    background: url("../img/WebSite/IMG_1221.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
 }
 
 .carousel-background .carousel-item:nth-child(6) {
@@ -931,17 +931,18 @@ main.about .map-container iframe {
     }
 
     main.blown-in section:nth-child(3) .img-box > div > img {
-        width: 135%;
-        margin-left: -30px;
-        margin-top: -380px;
+        width: 132%;
+        margin-left: -125px;
+        margin-top: -70px;
         transform: skew(-21deg);
         margin-bottom: 50px;
     }
 
-    main.blown-in section:nth-child(5) .img-box > div > img {
+    main.blown-in section:nth-child(4) .img-box > div > img {
         width: 130%;
         margin-left: -30px;
         margin-top: -120px;
+        transform: skew(21deg);
     }
 
     main.blown-in section .text-box {
