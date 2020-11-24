@@ -475,8 +475,6 @@ main section {
 /* END OUR PRODUCTS (MULTI-BOX SLIDER) */
 
 /* MASONRY GALLERY */
-
-
 .masonry-gallery {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -920,19 +918,20 @@ main.about .map-container iframe {
         width: 450px;
         height: 350px;
         overflow: hidden;
+        background-color: red;
     }
 
     main.blown-in section .img-box > div > img {
-        width: 140%;
-        margin-left: -110px;
-        margin-top: -350px;
+        width: 130%;
+        margin-left: -70px;
+        margin-top: -130px;
         transform: skew(21deg);
         margin-bottom: 50px;
     }
 
     main.blown-in section:nth-child(3) .img-box > div > img {
-        width: 132%;
-        margin-left: -125px;
+        width: 130%;
+        margin-left: -90px;
         margin-top: -70px;
         transform: skew(-21deg);
         margin-bottom: 50px;
@@ -940,8 +939,8 @@ main.about .map-container iframe {
 
     main.blown-in section:nth-child(4) .img-box > div > img {
         width: 130%;
-        margin-left: -30px;
-        margin-top: -120px;
+        margin-left: -40px;
+        margin-top: -50px;
         transform: skew(21deg);
     }
 
