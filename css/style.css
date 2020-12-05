@@ -593,16 +593,16 @@ main.batts .batts-content-text {
 -----------------   ### SPRAY FOAM PAGE ###   -----------------
                     #####################*/
 /* SHUFFLE PHOTOS */
-.main-about {
+.spray-foam .shuffled-images {
     position: relative;
 }
 
-.main-about .img-left-01 {
+.spray-foam .shuffled-images .img-left-1 {
     display: inline-block;
     margin-top: -50px;
 }
 
-.main-about .img-left-02 {
+.spray-foam .shuffled-images .img-left-2 {
     display: inline-block;
     border: 10px solid #E0E0E0;
     margin-top: -180px;
@@ -610,38 +610,38 @@ main.batts .batts-content-text {
     margin-left: 100px;
 }
 
-.post-about {
+.spray-foam .shuffled-images-content {
     background: rgba(255, 255, 255, 0.95);
     /*padding: 80px 50px;*/
+    margin: 0 -200px 0 -50px;
     padding: 20px;
     margin-top: 0;
     position: relative;
     z-index: 1;
 }
 
-.post-about.negative-margin {
-    margin: 0 -200px 0 -50px;
-}
-
-.main-about .img-rightt-01 {
+.spray-foam .shuffled-images .img-right-1 {
     margin-top: -20px;
     margin-left: -200px;
 }
 
-.main-about .img-rightt-02 {
+.spray-foam .shuffled-images .img-right-2 {
     margin-top: -100px;
     margin-left: -100px;
+    border: 10px solid #E0E0E0;
 }
+/* END SHUFFLE PHOTOS */
 
-.spray-foam section #tabBenefits {
+/* BENEFITS */
+.spray-foam section #tabsBenefits {
     border: none;
 }
 
-.spray-foam section #tabBenefits li a {
+.spray-foam section #tabsBenefits li a {
     color: black;
 }
 
-.spray-foam section #tabBenefitsContent ul li i {
+.spray-foam section #tabsBenefitsContent ul li i {
     margin-right: 5px;
 }
 
@@ -658,7 +658,7 @@ main.batts .batts-content-text {
     border-bottom: 2px solid #00A651;
     border-bottom-color: rgba(0, 166, 81, 0.5);
 }
-/* END SHUFFLE PHOTOS */
+/* END BENEFITS */
                     /*#########################
 -----------------   ### END SPRAY FOAM PAGE ###   -----------------
                     #########################*/
