@@ -30,6 +30,23 @@ p {
     padding: 0;
 }
 
+li {
+    list-style-type: none;
+}
+
+main.spray-foam #tabsBenefitsContent li i,
+main.blown-in .advantages li i,
+main.gutters section ul li i,
+main.about h1 > i {
+    color: #185177;
+}
+
+main.spray-foam #tabsBenefitsContent li i,
+main.blown-in .advantages li i,
+main.gutters section ul li i {
+    margin-right: 5px;
+}
+
 .social-container .fa-facebook-f {
     color: #3b5998;
 }
@@ -49,7 +66,7 @@ p {
 
 .info-top a {
     color: #F37221;
-/*    color: #185177;*/
+    /* color: #185177; */
 }
 
 .info-top p i {
@@ -138,7 +155,8 @@ main h2 {
 
 main > h2 {
     font-family: 'Gugi';
-    color: #00A651;
+    /* color: #00A651; */
+    color: #185177;
 }
 
 main section {
@@ -641,19 +659,15 @@ main.batts .batts-content-text {
     color: black;
 }
 
-.spray-foam section #tabsBenefitsContent ul li i {
-    margin-right: 5px;
-}
-
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
+.spray-foam .nav-tabs .nav-item.show .nav-link,
+.spray-foam .nav-tabs .nav-link.active {
     font-weight: 700;
     border: none;
     border-bottom: 2px solid #00A651;
 }
 
-.nav-tabs .nav-item.show .nav-link:hover,
-.nav-tabs .nav-link:hover {
+.spray-foam .nav-tabs .nav-item.show .nav-link:hover,
+.spray-foam .nav-tabs .nav-link:hover {
     border: none;
     border-bottom: 2px solid #00A651;
     border-bottom-color: rgba(0, 166, 81, 0.5);
@@ -694,7 +708,6 @@ main.gutters #custCarousel .carousel-indicators>li {
 main.gutters #custCarousel .carousel-indicators li img {
     display: flex;
     opacity: 0.5;
-
 }
 
 main.gutters #custCarousel .carousel-indicators li:hover img {
@@ -768,7 +781,7 @@ main.about .map-container iframe {
 }
 
 .contacts a {
-    color: #F37221;
+    color: black;
 }
                     /*#######################
 -----------------   ### END CONTACTS PAGE ###   -----------------
