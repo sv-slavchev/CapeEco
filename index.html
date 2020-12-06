@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="js/slick-plugin/slick.css">
     <!-- Gugi font-family -->
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -442,8 +443,8 @@
     </div>
 
     <main class="bg-light">
-        <div class="container d-md-flex contacts-container">
-            <a href="tel:7745033775" class="col-md-4 col-12 d-flex justify-content-center py-3">
+        <div class="container d-sm-flex contacts-container">
+            <a href="tel:7745033775" class="col-sm-4 col-12 d-flex justify-content-center py-3">
                 <div class="d-flex align-items-center">
                     <div class="d-block text-center">
                         <div><h4><i class="fas fa-phone-alt"></i> Phone</h4></div>
@@ -452,8 +453,7 @@
                 </div>
             </a>
 
-            <!-- Address map modal -->
-            <a href="#" class="col-md-4 col-12 d-flex justify-content-center py-3" data-toggle="modal" data-target="#addressModal">
+            <a href="#" class="col-sm-4 col-12 d-flex justify-content-center py-3" data-toggle="modal" data-target="#addressModal">
                 <div class="d-flex align-items-center">
                     <div class="d-block text-center">
                         <div><h4><i class="fas fa-map-marker-alt"></i> Address</h4></div>
@@ -461,9 +461,8 @@
                     </div>
                 </div>
             </a>
-            <!-- End Address map modal -->
 
-            <a href="mailto:christian@capeeco.com?subject=Mail_from_our_Website" class="col-md-4 col-12 d-flex justify-content-center py-3">
+            <a href="mailto:christian@capeeco.com?subject=Mail_from_our_Website" class="col-sm-4 col-12 d-flex justify-content-center py-3">
                 <div class="d-flex align-items-center">
                     <div class="d-block text-center">
                         <div><h4><i class="fas fa-envelope"></i> Email</h4></div>
@@ -766,7 +765,7 @@
                         <hr class="d-inline-block mt-0">
                         <a href="tel:7745033775"><p><i class="fas fa-phone-alt mr-1"></i> 774-503-3775</p></a>
                         <a href="mailto:christian@capeeco.com?subject=Mail_from_our_Website"><p><i class="fas fa-envelope mr-1"></i> christian@capeeco.com</p></a>
-                        <p><i class="fas fa-map-marker-alt mr-1"></i> 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</p>
+                        <a href="#" data-toggle="modal" data-target="#addressModal"><p><i class="fas fa-map-marker-alt mr-1"></i> 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</p></a>
                     </address>
 
                     <div class="social-container mt-3">
@@ -798,14 +797,14 @@
     <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModal"
     aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
+            <address class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Address: 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
 
                 <iframe width="100%" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=16%20Giddiah%20Hill%20Rd%20Unit%207%20Orleans%2C%20MA%2002653&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            </div>
+            </address>
         </div>
     </div>
 

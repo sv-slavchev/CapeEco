@@ -25,6 +25,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Comfortaa';
+}
+
 p {
     margin: 0;
     padding: 0;
@@ -348,7 +352,8 @@ main section {
     color: white;
 }
 
-.contacts-container a:hover {
+.contacts-container a:hover,
+footer a:hover p {
     color: #F37221;
 }
 /* END CONTACTS CONTAINER */
