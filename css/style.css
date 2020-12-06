@@ -168,42 +168,42 @@ main section {
                     ################*/
 /* CAROUSEL */
 .carousel-background .carousel-item:nth-child(1) {
-    background: url("../img/WebSite/IMG_1221.jpg");
+    background: url("../img/gutters/hd/house-gutters-17.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 }
 
 .carousel-background .carousel-item:nth-child(2) {
-    background: url("../img/WebSite/IMG_1154.jpg");
+    background: url("../img/gutters/hd/house-gutters-23.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .carousel-background .carousel-item:nth-child(3) {
-    background: url("../img/WebSite/IMG_1201.jpg");
+    background: url("../img/gutters/hd/house-gutters-24.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .carousel-background .carousel-item:nth-child(4) {
-    background: url("../img/WebSite/IMG_1441.jpg");
+    background: url("../img/susspended-ceilings/hd/suspended-ceiling-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .carousel-background .carousel-item:nth-child(5) {
-    background: url("../img/WebSite/IMG_1453.jpg");
+    background: url("../img/gutters/hd/house-gutters-25.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .carousel-background .carousel-item:nth-child(6) {
-    background: url("../img/WebSite/IMG_1701.jpg");
+    background: url("../img/insulation/batts/hd/batts-insulation-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
