@@ -27,6 +27,7 @@ html {
 
 body {
     font-family: 'Comfortaa';
+    font-size: 16px;
 }
 
 p {
@@ -38,11 +39,17 @@ li {
     list-style-type: none;
 }
 
+.footer-copyright a,
 main.spray-foam #tabsBenefitsContent li i,
 main.blown-in .advantages li i,
 main.gutters section ul li i,
 main.about h1 > i {
     color: #185177;
+}
+
+.contacts-container a:hover,
+footer a:hover p {
+    color: #F37221;
 }
 
 main.spray-foam #tabsBenefitsContent li i,
@@ -69,8 +76,11 @@ main.gutters section ul li i {
 }
 
 .info-top a {
-    color: #F37221;
-    /* color: #185177; */
+     color: #185177;
+}
+
+.info-top a:nth-child(2) {
+    color: black;
 }
 
 .info-top p i {
@@ -85,7 +95,7 @@ main.gutters section ul li i {
 .navbar hr.d-lg-none {
     margin: 0;
     padding: 0;
-    background-color: #185177;
+    background-color: #F37221;
 }
 
 .navbar hr.d-lg-block {
@@ -106,11 +116,9 @@ main.gutters section ul li i {
 }
 
 .navbar,
-.navbar .dropdown-menu a,
-footer {
-    font-size: 14px;
-    font-weight: 600;
-    /* background-color: rgba(255, 255, 255, 0.8); */
+.navbar .dropdown-menu a {
+    font-size: 12px;
+    font-weight: 700;
 }
 
 /* without this, clicking will make it sticky */
@@ -289,8 +297,8 @@ main section {
 .side-buttons a .fixed-action-ins-btn,
 .side-buttons a .fixed-action-map-btn {
     position: fixed;
-    right: -100px;
-    width: 150px;
+    right: -106px;
+    width: 155px;
     padding: 18px;
     padding-left: 20px;
     color: white;
@@ -341,7 +349,7 @@ main section {
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    /*background-color: rgba(255, 255, 255, 0.3);*/
+    /* background-color: rgba(255, 255, 255, 0.3); */
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     color: white;
@@ -350,11 +358,6 @@ main section {
 
 .contacts-container a {
     color: white;
-}
-
-.contacts-container a:hover,
-footer a:hover p {
-    color: #F37221;
 }
 /* END CONTACTS CONTAINER */
 
@@ -369,7 +372,7 @@ footer a:hover p {
 }
 
 .multi-box-slide div div {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .multi-box-slide div div p {
@@ -530,6 +533,8 @@ footer {
     margin-bottom: 50px;
     z-index: -1;
     padding-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 footer h6,
@@ -574,10 +579,6 @@ footer .social-container a {
 .footer-copyright p {
     text-align: center;
     padding: 15px 0;
-}
-
-.footer-copyright a {
-    color: #185177;
 }
 /* END FOOTER */
                     /*####################
@@ -818,9 +819,8 @@ main.about .map-container iframe {
     }
 }
 
-
-/* NAVBAR RESPONSIVE */
 @media only screen and (max-width: 768px) {
+    /* NAVBAR RESPONSIVE */
     header .navbar .navbar-brand.d-lg-none {
         margin-top: 30px;
         transition: 0.5s ease-in-out;
@@ -839,6 +839,11 @@ main.about .map-container iframe {
         /*background-color: #667490;*/
         background-color: rgba(255, 255, 255, 0.9);
     }
+    /* END NAVBAR RESPONSIVE */
+
+    .carousel-indicators {
+        margin-bottom: 10px;
+    }
 
     /* CONTACTS CONTAINER */
     .contacts-container {
@@ -847,7 +852,9 @@ main.about .map-container iframe {
         color: black;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
-        margin-bottom: -70px;
+        margin-top: 0;
+        padding-top: 50px;
+        padding-bottom: -20px;
         width: 100%;
     }
 
@@ -866,7 +873,6 @@ main.about .map-container iframe {
         margin-bottom: 0;
     }
 }
-/* END NAVBAR RESPONSIVE */
 
 /* MASONRY GALLERY RESPONSIVE */
 @media only screen and (max-width: 450px) {
