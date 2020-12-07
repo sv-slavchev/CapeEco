@@ -305,28 +305,42 @@
             <!-- Google map -->
             <div class="container p-0">
                 <div class="rounded-top">
-                    <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=16%20Giddiah%20Hill%20Rd%20Unit%207%20Orleans%2C%20MA%2002653&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <iframe height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=16%20Giddiah%20Hill%20Rd%20Unit%207%20Orleans%2C%20MA%2002653&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
                 </div>
             </div>
             <!-- End Google Maps -->
 
-            <div class="container d-block d-sm-flex text-center p-5">
-                <a class="col-xs-12 col-md-4 mb-4 mb-md-0" href="tel:7745033775">
-                    <i class="fas fa-phone-alt fa-2x"></i>
-                    <h5 class="font-weight-bold my-3">Phone number</h5>
-                    <p>774-503-3775</p>
+            <div class="container-fluid d-block d-sm-flex p-5">
+                <h2 class="d-sm-none">Contacts</h2>
+
+                <a href="tel:7745033775" class="col-md-3 col-xs-12 d-flex justify-content-center py-3">
+                    <div class="d-flex align-items-center">
+                        <div class="d-block text-center">
+                            <i class="fas fa-phone-alt fa-2x"></i>
+                            <h4 class="my-3">Phone</h4>
+                            <p>774-503-3775</p>
+                        </div>
+                    </div>
                 </a>
 
-                <a class="col-xs-12 col-md-4 mb-4 mb-md-0" href="#" data-toggle="modal" data-target="#addressModal">
-                    <i class="fas fa-map-marker-alt fa-2x"></i>
-                    <h5 class="font-weight-bold my-3">Address</h5>
-                    <p>16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</p>
+                <a href="#" class="col-md-6 col-xs-12 d-flex justify-content-center py-3" data-toggle="modal" data-target="#addressModal">
+                    <div class="d-flex align-items-center">
+                        <div class="d-block text-center">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <h4 class="my-3">Address</h4>
+                            <p>16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</p>
+                        </div>
+                    </div>
                 </a>
 
-                <a class="col-xs-12 col-md-4 mb-4 mb-md-0" href="mailto:christian@capeeco.com?subject=Mail_from_our_Website">
-                    <i class="fas fa-envelope fa-2x"></i>
-                    <h5 class="font-weight-bold my-3">E-mail</h5>
-                    <p>christian@capeeco.com</p>
+                <a href="mailto:christian@capeeco.com?subject=Mail_from_our_Website" class="col-md-3 col-xs-12 d-flex justify-content-center py-3">
+                    <div class="d-flex align-items-center">
+                        <div class="d-block text-center">
+                            <i class="fas fa-envelope fa-2x"></i>
+                            <h4 class="my-3">Email</h4>
+                            <p>christian@capeeco.com</p>
+                        </div>
+                    </div>
                 </a>
             </div>
         </section>
@@ -470,8 +484,8 @@
 
                 <!--Fourth column-->
                 <div class="col-md-3 col-sm-6 col-12">
+                    <h6>Contacts</h6>
                     <address>
-                        <h6>Contacts</h6>
                         <hr class="d-inline-block mt-0">
                         <a href="tel:7745033775"><p><i class="fas fa-phone-alt mr-1"></i> 774-503-3775</p></a>
                         <a href="mailto:christian@capeeco.com?subject=Mail_from_our_Website"><p><i class="fas fa-envelope mr-1"></i> christian@capeeco.com</p></a>
@@ -509,24 +523,24 @@
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <address class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Address: 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</h5>
+                    <p class="modal-title" id="exampleModalLabel">Address: 16 Giddiah Hill Rd Unit 7 Orleans, MA 02653</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
 
-                <iframe width="100%" height="600" src="https://maps.google.com/maps?q=16%20Giddiah%20Hill%20Rd%20Unit%207%20Orleans%2C%20MA%2002653&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <iframe height="550" src="https://maps.google.com/maps?q=16%20Giddiah%20Hill%20Rd%20Unit%207%20Orleans%2C%20MA%2002653&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
             </address>
         </div>
     </div>
 
     <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
-    <!-- <script type="text/javascript" src="js/myScript.js"></script> -->
+    <!-- <script src="js/myScript.js"></script> -->
 </body>
 </html>

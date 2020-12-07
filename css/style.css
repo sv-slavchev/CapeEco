@@ -39,11 +39,16 @@ li {
     list-style-type: none;
 }
 
+iframe {
+    width: 100%;
+    border: 0;
+}
+
 .footer-copyright a,
 main.spray-foam #tabsBenefitsContent li i,
 main.blown-in .advantages li i,
 main.gutters section ul li i,
-main.about h1 > i {
+main.about i {
     color: #185177;
 }
 
@@ -230,7 +235,7 @@ main section {
     background: -o-linear-gradient(bottom, rgba(0,0,0,0.4) 10%, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.0) 60%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,1) 100%);
     background: linear-gradient(to top, rgba(0,0,0,0.4) 10%, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.0) 60%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,1) 100%); */
 
-    background: linear-gradient(to top, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.0) 60%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0.2) 30%, rgba(255,255,255,0.1) 70%, rgba(255,255,255,0.5) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,1) 100%);
 
    /* background: linear-gradient(180deg, rgba(255,255,255,.9) 10%, rgba(255,255,255,0) 30%), linear-gradient(-20deg, rgba(0,0,0,0.6) 15%, rgba(0,0,0, 0) 40%); */
 
@@ -343,15 +348,9 @@ main section {
 /* CONTACTS CONTAINER */
 .contacts-container {
     position: absolute;
-    margin-top: -10px;
     left: 0;
     right: 0;
     bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    /* background-color: rgba(255, 255, 255, 0.3); */
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
     color: white;
     z-index: 2;
 }
@@ -758,17 +757,17 @@ main.gutters #custCarousel .carousel-indicators li.active img {
 -----------------   ### ABOUT US PAGE ###   -----------------
                     ###################*/
 main.about .map-container {
-  overflow: hidden;
-  position: relative;
-  height: 750px;
+    overflow: hidden;
+    position: relative;
+    height: 750px;
 }
 
 main.about .map-container iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
                     /*#######################
 -----------------   ### END ABOUT US PAGE ###   -----------------
@@ -797,26 +796,26 @@ main.about .map-container iframe {
 -----------------   ### @MEDIA RESPONSIVE ###   -----------------
                     #######################*/
 
-@media only screen and (max-width: 576px) {
-    header .navbar .navbar-brand.d-lg-none {
-        margin-top: 30px;
-        transition: 0.5s ease-in-out;
+@media only screen and (max-width: 400px) {
+    /* MASONRY GALLERY */
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
     }
+    /* END MASONRY GALLERY */
+}
 
-    .top-nav-collapse {
-        margin-top: -30px;
-        transition: 0.5s ease-in-out;
+@media only screen and (max-width: 450px) {
+    /* MASONRY GALLERY */
+    .masonry-gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
     }
-
-    button.navbar-toggler {
-        margin-top: 30px;
-    }
-
-    footer {
-        position: static;
-        margin-top: -520px;
-        margin-bottom: 0;
-    }
+    /* END MASONRY GALLERY */
 }
 
 @media only screen and (max-width: 768px) {
@@ -826,13 +825,27 @@ main.about .map-container iframe {
         transition: 0.5s ease-in-out;
     }
 
+    header.header-index .navbar .navbar-brand.d-lg-none {
+        margin-top: 0;
+        transition: 0.5s ease-in-out;
+    }
+
     .top-nav-collapse {
         margin-top: -30px;
         transition: 0.5s ease-in-out;
     }
 
+    header.header-index .top-nav-collapse {
+        margin-top: 0;
+        transition: 0.5s ease-in-out;
+    }
+
     button.navbar-toggler {
         margin-top: 30px;
+    }
+
+    header.header-index button.navbar-toggler {
+        margin-top: 0;
     }
 
     .navbar {
@@ -848,14 +861,9 @@ main.about .map-container iframe {
     /* CONTACTS CONTAINER */
     .contacts-container {
         position: relative;
-        background-color: rgba(255, 255, 255, 1);
+        background-color: white;
         color: black;
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
-        margin-top: 0;
-        padding-top: 50px;
-        padding-bottom: -20px;
-        width: 100%;
+        padding: 20px 0;
     }
 
     .contacts-container a {
@@ -863,44 +871,23 @@ main.about .map-container iframe {
     }
     /* END CONTACTS CONTAINER */
 
-    main {
-        margin-bottom: 550px;
+    /* GUTTERS CUSTOM CAROUSEL */
+    main.gutters #custCarousel .carousel-indicators>li {
+        margin-bottom: 30px;
     }
+    /* END GUTTERS CUSTOM CAROUSEL */
+}
 
+@media only screen and (max-width: 992px) {
     footer {
-        position: static;
-        margin-top: -520px;
+        position: relative;
+        margin-top: -310px;
         margin-bottom: 0;
     }
 }
 
-/* MASONRY GALLERY RESPONSIVE */
-@media only screen and (max-width: 450px) {
-    .masonry-gallery {
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-        -webkit-column-width: 100%;
-        -moz-column-width: 100%;
-        column-width: 100%;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .btn.filter {
-        padding-left: 1.1rem;
-        padding-right: 1.1rem;
-    }
-}
-/* END MASONRY GALLERY RESPONSIVE */
-
-/* SPRAY FOAM/BATTS PAGE RESPONSIVE */
 @media only screen and (min-width: 992px) {
-    /*main.spray-foam .spray-foam-content-text,
-    main.batts .batts-content-text {
-        margin-top: 10%;
-    }*/
-
+    /* SPRAY FOAM/BATTS PAGE */
     main.spray-foam .spray-foam-content-text,
     main.batts .batts-content-text {
         border: 10px solid #E0E0E0;
@@ -915,17 +902,16 @@ main.about .map-container iframe {
     main.batts section .img-right {
         margin-left: -300px;
     }
-}
-/* END SPRAY FOAM/BATTS PAGE RESPONSIVE */
+    /* END SPRAY FOAM/BATTS PAGE */
 
-/* BLOWN-IN PAGE */
-@media only screen and (min-width: 992px) {
+    /* BLOWN-IN PAGE */
     main.blown-in section .img-box {
         background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
         background: -o-linear-gradient(left, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
         background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
         transform: skew(-21deg);
         padding-left: 50px;
+        width: 100%;
     }
 
     main.blown-in section:nth-child(3) .img-box {
@@ -934,6 +920,7 @@ main.about .map-container iframe {
         background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
         transform: skew(21deg);
         padding-left: 70px;
+        width: 100%;
     }
 
     main.blown-in section .img-box > div {
@@ -976,5 +963,11 @@ main.about .map-container iframe {
     main.blown-in section:nth-child(3) .text-box {
         padding-left: 100px;
     }
+    /* END BLOWN-IN PAGE */
+
+    footer {
+        position: relative;
+        margin-top: -310px;
+        margin-bottom: 0;
+    }
 }
-/* END BLOWN-IN PAGE */
