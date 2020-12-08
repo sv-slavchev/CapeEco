@@ -30,6 +30,11 @@ body {
     font-size: 16px;
 }
 
+main,
+.footer-copyright {
+    background-color: #E0E0E0;
+}
+
 p {
     margin: 0;
     padding: 0;
@@ -235,7 +240,7 @@ main section {
     background: -o-linear-gradient(bottom, rgba(0,0,0,0.4) 10%, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.0) 60%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,1) 100%);
     background: linear-gradient(to top, rgba(0,0,0,0.4) 10%, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.0) 60%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,1) 100%); */
 
-    background: linear-gradient(to top, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0.2) 30%, rgba(255,255,255,0.1) 70%, rgba(255,255,255,0.5) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 20%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.1) 70%, rgba(255,255,255,0.6) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,0.9) 100%);
 
    /* background: linear-gradient(180deg, rgba(255,255,255,.9) 10%, rgba(255,255,255,0) 30%), linear-gradient(-20deg, rgba(0,0,0,0.6) 15%, rgba(0,0,0, 0) 40%); */
 
@@ -407,7 +412,6 @@ main section {
 
 .slick-list .dragging {
     cursor: pointer;
-    cursor: hand;
 }
 
 .slick-slider .slick-track,
@@ -505,10 +509,12 @@ main section {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
+/*
     -webkit-column-width: 33%;
     -moz-column-width: 33%;
     column-width: 33%;
-    column-count: 3;
+*/
+/*    column-width: auto;*/
     margin-top: 20px;
 }
 
@@ -811,9 +817,11 @@ main.about .map-container iframe {
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
+/*
         -webkit-column-width: 100%;
         -moz-column-width: 100%;
         column-width: 100%;
+*/
     }
     /* END MASONRY GALLERY */
 }
