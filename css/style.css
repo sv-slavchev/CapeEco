@@ -27,13 +27,15 @@ html {
 
 body {
     font-family: 'Comfortaa';
-    font-size: 16px;
+/*    font-size: 16px;*/
 }
 
+/*
 main,
 .footer-copyright {
     background-color: #E0E0E0;
 }
+*/
 
 p {
     margin: 0;
@@ -49,11 +51,15 @@ iframe {
     border: 0;
 }
 
+main > h2,
+.info-top a,
 .footer-copyright a,
 .spray-foam .tab-content li i,
 .blown-in .advantages li i,
 .gutters section ul li i,
-.about i {
+.about i,
+.contacts i,
+.contacts h5 {
     color: #185177;
 }
 
@@ -83,10 +89,6 @@ main.gutters section ul li i {
 .info-top {
     text-transform: none;
     padding: 10px;
-}
-
-.info-top a {
-     color: #185177;
 }
 
 .info-top a:nth-child(2) {
@@ -174,8 +176,12 @@ main.gutters section ul li i {
 /* END NAVBAR */
 
 main {
-    box-shadow: 0 10px 12px rgba(52, 58, 64, 0.8);
+    background: url(../img//background/background-4.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
     margin-bottom: 320px;
+    box-shadow: 0 10px 12px rgba(52, 58, 64, 0.8);
     z-index: 1;
 }
 
@@ -185,7 +191,6 @@ main h2 {
 
 main > h2 {
     font-family: 'Gugi';
-    color: #185177;
 }
 
 main section {
@@ -801,11 +806,6 @@ main.about .map-container iframe {
                     ###################*/
 .contacts {
     min-height: 100%;
-}
-
-.contacts i,
-.contacts h5 {
-    color: #185177;
 }
 
 .contacts a {
