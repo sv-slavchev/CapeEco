@@ -27,15 +27,24 @@ html {
 
 body {
     font-family: 'Comfortaa';
-/*    font-size: 16px;*/
 }
 
-/*
 main,
 .footer-copyright {
     background-color: #E0E0E0;
 }
-*/
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h6 {
+    font-size: 0.9rem;
+}
+
+.masonry-gallery-container button {
+    font-size: 0.7rem;
+}
 
 p {
     margin: 0;
@@ -51,7 +60,6 @@ iframe {
     border: 0;
 }
 
-main > h2,
 .info-top a,
 .footer-copyright a,
 .spray-foam .tab-content li i,
@@ -68,9 +76,14 @@ footer a:hover p {
     color: #F37221;
 }
 
-main.spray-foam .tab-content li i,
-main.blown-in .advantages li i,
-main.gutters section ul li i {
+.top-nav-collapse,
+footer {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.spray-foam .tab-content li i,
+.blown-in .advantages li i,
+.gutters section ul li i {
     margin-right: 5px;
 }
 
@@ -176,10 +189,6 @@ main.gutters section ul li i {
 /* END NAVBAR */
 
 main {
-    background: url(../img//background/background-4.jpg);
-    background-repeat: repeat-y;
-    background-size: cover;
-    background-position: center;
     margin-bottom: 320px;
     box-shadow: 0 10px 12px rgba(52, 58, 64, 0.8);
     z-index: 1;
@@ -191,6 +200,7 @@ main h2 {
 
 main > h2 {
     font-family: 'Gugi';
+    color: #185177;
 }
 
 main section {
@@ -201,6 +211,12 @@ main section {
 -----------------   ### INDEX PAGE ###   -----------------
                     ################*/
 /* CAROUSEL */
+.carousel-background ul li h1,
+.carousel-background ul li p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 .carousel-background .carousel-item:nth-child(1) {
     background: url("../img/gutters/hd/house-gutters-17.jpg");
     background-repeat: no-repeat;
@@ -325,7 +341,6 @@ main section {
     right: -106px;
     width: 155px;
     padding: 20px;
-/*    padding-left: 20px;*/
     color: white;
     font-weight: 700;
     transition: .4s all ease-in-out;
@@ -334,13 +349,23 @@ main section {
 
 .side-buttons a .fixed-action-fb-btn {
     top: 150px;
-     background: linear-gradient(120deg, #3b5998, #FFFFFF);
+    background: -webkit-gradient(30deg, #3b5998, #FFFFFF);
+    background: -webkit-linear-gradient(30deg, #3b5998, #FFFFFF);
+    background: -moz-linear-gradient(30deg, #3b5998, #FFFFFF);
+    background: -ms-linear-gradient(30deg, #3b5998, #FFFFFF);
+    background: -o-linear-gradient(30deg, #3b5998, #FFFFFF);
+    background: linear-gradient(120deg, #3b5998, #FFFFFF);
 /*    background-color: #4267B2;*/
 }
 
 .side-buttons a .fixed-action-ins-btn {
     top: 203px;
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background: -webkit-gradient(bottom left, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background: -webkit-linear-gradient(bottom left, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background: -moz-linear-gradient(bottom left, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background: -ms-linear-gradient(bottom left, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background: -o-linear-gradient(bottom left, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background: linear-gradient(to top right, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
 .side-buttons a .fixed-action-map-btn {
@@ -389,6 +414,10 @@ main section {
 .multi-box-slide .slide {
     width: 150px;
     height: 150px;
+}
+
+.multi-box-slide figcaption {
+    display: none;
 }
 
 .multi-box-slide div div {
@@ -560,8 +589,6 @@ main section {
 /* FOOTER */
 footer {
     position: fixed;
-    /*background-color: #667490;*/
-    background-color: rgba(255, 255, 255, 0.9);
     margin-bottom: 50px;
     padding-top: 20px;
     font-size: 14px;
@@ -621,8 +648,8 @@ footer .social-container a {
 -----------------   ### SPRAY FOAM PAGE ###   -----------------
                     ### BATTS PAGE      ###
                     #####################*/
-main.spray-foam .spray-foam-content-text,
-main.batts .batts-content-text {
+.spray-foam .spray-foam-content-text,
+.batts .batts-content-text {
     background: rgba(255, 255, 255, 0.9);
     /*border: 10px solid #E0E0E0;*/
     padding: 20px;
@@ -678,11 +705,11 @@ main.batts .batts-content-text {
 /* END SHUFFLE PHOTOS */
 
 /* BENEFITS */
-.spray-foam section #tabsBenefits {
+.spray-foam section .tabsBenefits {
     border: none;
 }
 
-.spray-foam section #tabsBenefits li a {
+.spray-foam section .tabsBenefits li a {
     color: black;
 }
 
@@ -696,58 +723,67 @@ main.batts .batts-content-text {
 .spray-foam .nav-tabs .nav-item.show .nav-link:hover,
 .spray-foam .nav-tabs .nav-link:hover {
     border: none;
-    border-bottom: 2px solid #00A651;
-    border-bottom-color: rgba(0, 166, 81, 0.5);
+    border-bottom: 2px solid rgba(0, 166, 81, 0.5);
 }
 /* END BENEFITS */
                     /*#########################
 -----------------   ### END SPRAY FOAM PAGE ###   -----------------
                     #########################*/
 
+                    /*#####################
+-----------------   ### BLOWN-IN PAGE ###   -----------------
+                    #####################*/
+.blown-in section img {
+    width: 100%;
+}
+                    /*#########################
+-----------------   ### END BLOWN-IN PAGE ###   -----------------
+                    #########################*/
+
                     /*##################
 -----------------   ### GUTTERS PAGE ###   -----------------
                     ##################*/
-main.gutters section ul {
+.gutters section ul {
     font-size: 18px;
 }
 
 /* CAROUSEL */
-main.gutters .carousel-inner img {
+.gutters .carousel-inner img {
     width: 50%;
 }
 
 /*
-main.gutters #custCarousel a i,
-main.gutters #custCarousel a i {
+.gutters #custCarousel a i,
+.gutters #custCarousel a i {
     font-size: 30px;
     color: black;
 }
 */
 
-main.gutters #custCarousel .carousel-indicators {
+.gutters .custCarousel .carousel-indicators {
 /*    position: absolute;*/
 /*    margin-top: 20px;*/
     margin: auto;
 /*    background-color: rgba(255,255,255,0.2);*/
 }
 
-main.gutters #custCarousel .carousel-indicators>li {
+.gutters .custCarousel .carousel-indicators>li {
     width: 60px;
     height: 60px;
 }
 
-main.gutters #custCarousel .carousel-indicators li img {
+.gutters .custCarousel .carousel-indicators li img {
     display: flex;
     border-radius: 50%;
     border: 2px solid white;
     opacity: 1;
 }
 
-main.gutters #custCarousel .carousel-indicators li:hover img {
+.gutters .custCarousel .carousel-indicators li:hover img {
     opacity: 0.9;
 }
 
-main.gutters #custCarousel .carousel-indicators li.active img {
+.gutters .custCarousel .carousel-indicators li.active img {
     opacity: 1;
     border: 2px solid #F37221;
 }
@@ -784,13 +820,13 @@ main.gutters #custCarousel .carousel-indicators li.active img {
                     /*###################
 -----------------   ### ABOUT US PAGE ###   -----------------
                     ###################*/
-main.about .map-container {
+.about .map-container {
     overflow: hidden;
     position: relative;
     height: 750px;
 }
 
-main.about .map-container iframe {
+.about .map-container iframe {
     left: 0;
     top: 0;
     height: 100%;
@@ -855,7 +891,7 @@ main.about .map-container iframe {
         transition: 0.5s ease-in-out;
     }
 
-    header.header-index .navbar .navbar-brand.d-lg-none {
+    header .navbar .navbar-brand.d-lg-none {
         margin-top: 0;
         transition: 0.5s ease-in-out;
     }
@@ -865,7 +901,7 @@ main.about .map-container iframe {
         transition: 0.5s ease-in-out;
     }
 
-    header.header-index .top-nav-collapse {
+    header .top-nav-collapse {
         margin-top: 0;
         transition: 0.5s ease-in-out;
     }
@@ -874,13 +910,8 @@ main.about .map-container iframe {
         margin-top: 30px;
     }
 
-    header.header-index button.navbar-toggler {
+    header button.navbar-toggler {
         margin-top: 0;
-    }
-
-    .navbar {
-        /*background-color: #667490;*/
-        background-color: rgba(255, 255, 255, 0.9);
     }
     /* END NAVBAR RESPONSIVE */
 
@@ -902,17 +933,21 @@ main.about .map-container iframe {
     /* END CONTACTS CONTAINER */
 
     /* GUTTERS CUSTOM CAROUSEL */
-    main.gutters #custCarousel .carousel-indicators>li {
+    .gutters .custCarousel .carousel-indicators>li {
         margin-bottom: 30px;
     }
 
-    main.gutters .carousel-inner img {
+    .gutters .carousel-inner img {
         width: 100%;
     }
     /* END GUTTERS CUSTOM CAROUSEL */
 }
 
 @media only screen and (max-width: 992px) {
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
     footer {
         position: relative;
         margin-top: -310px;
@@ -922,58 +957,57 @@ main.about .map-container iframe {
 
 @media only screen and (min-width: 992px) {
     /* SPRAY FOAM/BATTS PAGE */
-    main.spray-foam .spray-foam-content-text,
-    main.batts .batts-content-text {
+    .spray-foam .spray-foam-content-text,
+    .batts .batts-content-text {
         border: 10px solid #E0E0E0;
     }
 
-    main.spray-foam section .img-left,
-    main.batts section .img-left {
+    .spray-foam section .img-left,
+    .batts section .img-left {
         margin-right: -300px;
     }
 
-    main.spray-foam section .img-right,
-    main.batts section .img-right {
+    .spray-foam section .img-right,
+    .batts section .img-right {
         margin-left: -300px;
     }
     /* END SPRAY FOAM/BATTS PAGE */
 
     /* BLOWN-IN PAGE */
-    main.blown-in section .img-box {
-        -webkit-background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
+    .blown-in section .img-box {
+        /*-webkit-background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
         -moz-background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
         -ms-background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
         -o-background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);*/
         margin: auto;
         transform: skew(-21deg);
         padding-left: 50px;
         width: 100%;
     }
 
-    main.blown-in section:nth-child(3) .img-box {
-        -webkit-background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
+    .blown-in section:nth-child(3) .img-box {
+        /*-webkit-background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
         -moz-background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
         -ms-background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
         -o-background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
-        background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);
+        background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 10%, #E0E0E0 50%);*/
         margin: auto;
         transform: skew(21deg);
         padding-left: 70px;
         width: 100%;
     }
 
-    main.blown-in section .img-box > div {
+    .blown-in section .img-box > div {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center bottom;
         width: 450px;
         height: 350px;
         overflow: hidden;
-        background-color: red;
     }
 
-    main.blown-in section .img-box > div > img {
+    .blown-in section .img-box > div > img {
         width: 130%;
         margin-left: -70px;
         margin-top: -130px;
@@ -981,7 +1015,7 @@ main.about .map-container iframe {
         margin-bottom: 50px;
     }
 
-    main.blown-in section:nth-child(3) .img-box > div > img {
+    .blown-in section:nth-child(3) .img-box > div > img {
         width: 130%;
         margin-left: -90px;
         margin-top: -70px;
@@ -989,18 +1023,18 @@ main.about .map-container iframe {
         margin-bottom: 50px;
     }
 
-    main.blown-in section:nth-child(4) .img-box > div > img {
+    .blown-in section:nth-child(4) .img-box > div > img {
         width: 130%;
         margin-left: -40px;
         margin-top: -50px;
         transform: skew(21deg);
     }
 
-    main.blown-in section .text-box {
+    .blown-in section .text-box {
         padding-right: 100px;
     }
 
-    main.blown-in section:nth-child(3) .text-box {
+    .blown-in section:nth-child(3) .text-box {
         padding-left: 100px;
     }
     /* END BLOWN-IN PAGE */
