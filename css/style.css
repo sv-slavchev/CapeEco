@@ -120,6 +120,11 @@ footer {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0), 0 2px 10px 0 rgba(0,0,0,0);
 }
 
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
 .navbar .social-container li a {
     font-size: 12px;
 }
@@ -865,6 +870,10 @@ footer .social-container a {
 }
 
 @media only screen and (max-width: 450px) {
+    .navbar .navbar-brand {
+        padding-top: 25px;
+    }
+
     /* MASONRY GALLERY */
     .masonry-gallery {
         -webkit-column-count: 1;
@@ -886,6 +895,7 @@ footer .social-container a {
 
 @media only screen and (max-width: 768px) {
     /* NAVBAR RESPONSIVE */
+/*
     header .navbar .navbar-brand.d-lg-none {
         margin-top: 30px;
         transition: 0.5s ease-in-out;
@@ -894,6 +904,10 @@ footer .social-container a {
     header .navbar .navbar-brand.d-lg-none {
         margin-top: 0;
         transition: 0.5s ease-in-out;
+    }
+*/
+    .navbar .navbar-brand {
+        padding-top: 25px;
     }
 
     .top-nav-collapse {
@@ -948,6 +962,10 @@ footer .social-container a {
         background-color: rgba(255, 255, 255, 0.9);
     }
 
+    .navbar .navbar-brand {
+        padding-top: 15px;
+    }
+
     footer {
         position: relative;
         margin-top: -310px;
@@ -956,6 +974,10 @@ footer .social-container a {
 }
 
 @media only screen and (min-width: 992px) {
+    .navbar .navbar-brand {
+        padding-top: 15px;
+    }
+
     /* SPRAY FOAM/BATTS PAGE */
     .spray-foam .spray-foam-content-text,
     .batts .batts-content-text {
