@@ -104,10 +104,6 @@ footer {
     padding: 10px;
 }
 
-.info-top a:nth-child(2) {
-    color: black;
-}
-
 .info-top p i {
     margin-right: 5px;
 }
@@ -166,6 +162,7 @@ footer {
 /* end without this, clicking will make it sticky */
 
 .scrolling-navbar,
+.scrolling-navbar .info-top,
 .scrolling-navbar .navbar-brand svg {
     transition: 0.5s ease-in-out;
 }
@@ -182,6 +179,7 @@ footer {
     width: 50px;
     height: 50px;
     transition: 0.5s ease-in-out;
+    margin-top: -10px;
 }
 /* end resize logo when scrolling-down */
 
@@ -537,11 +535,6 @@ main section {
     display: none;
 }
 
-.slick-prev:before,
-.slick-next:before {
-    color: black;
-}
-
 .slick-slide {
     transition: all ease-in-out .3s;
     opacity: 0.2;
@@ -601,10 +594,6 @@ footer {
     z-index: -1;
 }
 
-footer p {
-    color: black;
-}
-
 footer hr {
     width: 60px;
     background-color: #F37221;
@@ -614,7 +603,6 @@ footer h6 {
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 25px;
-    color: black;
 }
 
 footer div a p {
@@ -714,10 +702,6 @@ footer .social-container a {
     border: none;
 }
 
-.spray-foam section .tabsBenefits li a {
-    color: black;
-}
-
 .spray-foam .nav-tabs .nav-item.show .nav-link,
 .spray-foam .nav-tabs .nav-link.active {
     font-weight: 700;
@@ -756,14 +740,6 @@ footer .social-container a {
 .gutters .carousel-inner img {
     width: 50%;
 }
-
-/*
-.gutters #custCarousel a i,
-.gutters #custCarousel a i {
-    font-size: 30px;
-    color: black;
-}
-*/
 
 .gutters .custCarousel .carousel-indicators {
 /*    position: absolute;*/
@@ -849,6 +825,13 @@ footer .social-container a {
     min-height: 100%;
 }
 
+.info-top a:nth-child(2),
+footer h6,
+footer p,
+.slick-prev:before,
+.slick-next:before,
+.spray-foam section .tabsBenefits li a,
+.about .social-container a,
 .contacts a {
     color: black;
 }
@@ -871,7 +854,11 @@ footer .social-container a {
 
 @media only screen and (max-width: 450px) {
     .navbar .navbar-brand {
-        padding-top: 25px;
+        margin-top: 15px;
+    }
+
+    .scrolling-navbar {
+        padding-top: 0;
     }
 
     /* MASONRY GALLERY */
@@ -1039,7 +1026,7 @@ footer .social-container a {
 
     .blown-in section:nth-child(3) .img-box > div > img {
         width: 130%;
-        margin-left: -90px;
+        margin-left: -85px;
         margin-top: -70px;
         transform: skew(-21deg);
         margin-bottom: 50px;
