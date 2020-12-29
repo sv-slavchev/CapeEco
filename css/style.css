@@ -199,9 +199,6 @@ main {
 
 main h2 {
     text-align: center;
-}
-
-main > h2 {
     font-family: 'Gugi';
     color: #185177;
 }
@@ -567,6 +564,7 @@ main section {
     margin-top: 20px;
 }
 
+/*
 .masonry-gallery .pics {
     -webkit-transition: all 350ms ease;
     -moz-transition: all 350ms ease;
@@ -582,6 +580,7 @@ main section {
     -o-transform: scale(1);
     transform: scale(1);
 }
+*/
 /* END MASONRY GALLERY */
 
 /* FOOTER */
